@@ -159,5 +159,10 @@ namespace OHMS.user_control
 
             }
         }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
