@@ -38,7 +38,6 @@ namespace OHMS.user_control
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.orphan_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +48,7 @@ namespace OHMS.user_control
             this.nic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contact_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inmate_boarded = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,7 @@ namespace OHMS.user_control
             this.button3.Text = "  Add";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
@@ -159,16 +160,6 @@ namespace OHMS.user_control
             this.dataGridView1.Size = new System.Drawing.Size(1048, 429);
             this.dataGridView1.TabIndex = 6;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(726, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Search By";
-            // 
             // orphan_id
             // 
             this.orphan_id.HeaderText = "Orphan ID";
@@ -218,6 +209,16 @@ namespace OHMS.user_control
             // 
             this.inmate_boarded.HeaderText = "How Inmate Boarded";
             this.inmate_boarded.Name = "inmate_boarded";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(726, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Search By";
             // 
             // orphan_control
             // 

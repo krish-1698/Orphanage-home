@@ -96,6 +96,7 @@ namespace OHMS
             this.button2.TabIndex = 46;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // richhowboarded
             // 
@@ -229,11 +230,11 @@ namespace OHMS
             // 
             // txtInmateID
             // 
-            this.txtInmateID.Enabled = false;
             this.txtInmateID.Location = new System.Drawing.Point(173, 117);
             this.txtInmateID.Name = "txtInmateID";
             this.txtInmateID.Size = new System.Drawing.Size(273, 22);
             this.txtInmateID.TabIndex = 3;
+            this.txtInmateID.TextChanged += new System.EventHandler(this.txtInmateID_TextChanged);
             // 
             // radioButton2
             // 
@@ -245,6 +246,7 @@ namespace OHMS
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Male";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -256,6 +258,7 @@ namespace OHMS
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Female";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label9
             // 
@@ -373,7 +376,7 @@ namespace OHMS
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(910, 680);
+            this.panel1.Size = new System.Drawing.Size(912, 680);
             this.panel1.TabIndex = 1;
             // 
             // groupBox1
@@ -390,7 +393,7 @@ namespace OHMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 680);
+            this.ClientSize = new System.Drawing.Size(912, 680);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "orphan";
