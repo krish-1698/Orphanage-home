@@ -29,15 +29,20 @@ namespace OHMS.user_control
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(staffAttendance_control));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ohmsDataSet = new OHMS.ohmsDataSet();
+            this.ohmsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ohmsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ohmsDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,22 +59,6 @@ namespace OHMS.user_control
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1167, 720);
             this.panel1.TabIndex = 0;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(883, 56);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 22);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(178)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(103, 89);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(979, 408);
-            this.dataGridView1.TabIndex = 2;
             // 
             // textBoxBorder2
             // 
@@ -108,6 +97,32 @@ namespace OHMS.user_control
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(883, 56);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(199, 22);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(178)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(103, 89);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(979, 408);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // ohmsDataSet
+            // 
+            this.ohmsDataSet.DataSetName = "ohmsDataSet";
+            this.ohmsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ohmsDataSetBindingSource
+            // 
+            this.ohmsDataSetBindingSource.DataSource = this.ohmsDataSet;
+            this.ohmsDataSetBindingSource.Position = 0;
+            // 
             // staffAttendance_control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +134,8 @@ namespace OHMS.user_control
             this.Size = new System.Drawing.Size(1183, 736);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ohmsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ohmsDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -131,5 +148,7 @@ namespace OHMS.user_control
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private TextBoxBorder textBoxBorder2;
+        private ohmsDataSet ohmsDataSet;
+        private System.Windows.Forms.BindingSource ohmsDataSetBindingSource;
     }
 }

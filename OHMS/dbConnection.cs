@@ -11,7 +11,7 @@ namespace OHMS
     class dbConnection
     {
       
-        MySqlConnection con =new MySqlConnection("datasource=localhost; username=root; password=; database=OHMS");
+        MySqlConnection con =new MySqlConnection("datasource=localhost; username=root; password=; database=ohms");
         MySqlCommand cmd;
 
        
